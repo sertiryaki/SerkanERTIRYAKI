@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serkan Ertiyaki Kimdir?">
+    <meta name="keywords" content="HTML, CSS, Web Design, Semantic Tags">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta name="author" content="Serkan Ertiryaki">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https:; script-src 'self'; style-src 'self';">-->
+    <link rel="stylesheet" href="style.css" preload as="style" crossorigin="anonymous">
+    <link rel="stylesheet" href="header-fix.css">
+    <link rel="icon" href="image/icon.jpg">
+</head>
+<body>
+
+    <header>
+        <h1>SERKAN ERTİRYAKİ</h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfam.html">Ana Sayfam</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="fotograf.html">Fotoğraf Galerisi</a></li>
+                <li><a href="hobiler.html">Hobilerim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="slider">
+                <img src="image/slider/IMG-20241223-WA0011.jpg" alt="resim" width="100%">
+                <div class="button">
+                    <i class="fa-solid fa-arrow-left fa-4x" onclick="next()"></i>
+                    <i class="fa-solid fa-arrow-right fa-4x" onclick="back()"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="icon-list">
+            <a href="https://www.linkedin.com/in/serkanerti%CC%87ryaki%CC%87/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/sertiryaki" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/@serkanertiryaki5376" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://music.youtube.com/@serkanertiryaki5376" target="_blank">
+                <i style="background-image: url('image/youtube-music.svg');"></i>
+            </a>
+
+            <a href="https://uzaydolmusu.wordpress.com/" target="_blank">
+                <i class="fa-brands fa-wordpress"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Serkan ERTİRYAKİ. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const template = document.querySelector('#extra-content');
+            const content = document.importNode(template.content, true);
+            document.body.appendChild(content);
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/4cfc548dd4.js"></script>
+    <script src="app.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-83SEP2L2P3"></script>
+        <script>
+         window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-83SEP2L2P3');
+        </script>
+</body>
+
+</html>
